@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f7f7f7;
   --foreground: #171717;
+  --primary-500:#030303;
+  --secondary-500:#d3d3d3;
+  --secondary-600:#767373;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +20,28 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-primary-500{
+  background-color: var(--primary-500);
+}
+.text-primary-500{
+  color: var(--primary-500);
+}
+.\!text-primary-500{
+  color: var(--primary-500) !important;
+}
+.bg-secondary-500{
+  background-color: var(--secondary-500);
+}
+.\!bg-secondary-500{
+  background-color: var(--secondary-500) !important;
+}
+.text-secondary-600{
+  color: var(--secondary-600);
+}
+/* custom css */
+
+input:checked{
+  accent-color: var(--primary-500);
 }
