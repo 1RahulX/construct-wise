@@ -15,7 +15,7 @@ const SellerLayout = ({ children }: sellerLayoutProp) => {
             alt="logo"
             width={60}
             height={60}
-            className="rounded-md"
+            className="rounded-md m"
           />
         </div>
         <div className="flex gap-4 items-center">
